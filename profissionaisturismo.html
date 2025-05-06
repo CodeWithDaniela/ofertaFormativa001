@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curso Profissional Técnico de Turismo</title>
+  <style>
+   body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: beige;
+    }
+
+    .menu-toggle {
+      display: block;
+      background-color: rgb(66, 42, 74);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 1001;
+    }
+
+    nav {
+      width: 220px;
+      background-color: rgb(66, 42, 74);
+      color: white;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      padding-top: 50px;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+      z-index: 1000;
+    }
+
+    nav.show {
+      transform: translateX(0);
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 20px 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: block;
+    }
+
+    nav ul li a:hover {
+      background-color: rgb(99, 66, 112);
+    }
+
+    .main-content {
+      padding: 20px;
+      margin-left: 0;
+      max-width: 1000px;
+    }
+
+    h1 {
+      font-family: Tuffy, sans-serif;
+      color: rgb(66, 42, 74);
+    }
+
+    .box {
+      border: 1px solid rgb(66, 42, 74);
+      padding: 16px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      background-color: rgb(233, 233, 202);
+    }
+
+    .box h2 {
+      margin-top: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid rgb(66, 42, 74);
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: rgb(66, 42, 74);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+
+  <nav id="side-menu">
+    <ul>
+      <li><a href="index.html" onclick="closeMenu()">Página inicial</a></li>
+      <li><a href="cientifico.html" onclick="closeMenu()">Científico-Humanísticos</a></li>
+      <li><a href="profissionaisturismo.html" onclick="closeMenu()">Profissional Turismo</a></li>
+      <li><a href="info.html" onclick="closeMenu()">Informações</a></li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <h1>Curso Profissional Técnico de Turismo</h1>
+    <div class="box">
+      <p>O Curso Profissional de Técnico de Turismo tem a duração de três anos e é uma excelente opção para quem deseja ingressar no setor do turismo...</p>
+      <p>O curso tem como objetivo dotar os alunos com competências técnicas e práticas essenciais para atuar no planeamento, promoção e realização de atividades turísticas...</p>
+      <p>Além disso, inclui uma componente prática de 600 horas de Formação em Contexto de Trabalho em organizações do setor.</p>
+      <p><a href="https://youtu.be/j_iHaxXot5I" target="_blank">▶ Ver vídeo do curso</a></p>
+    </div>
+
+    <div class="box">
+      <h2>Plano Curricular</h2>
+      <table>
+        <tr><th>Disciplinas</th><th>Total (3 anos)</th></tr>
+        <tr><td>Português</td><td>320 horas</td></tr>
+        <tr><td>Língua Estrangeira I, II ou III</td><td>220 horas</td></tr>
+        <tr><td>Área de Integração</td><td>220 horas</td></tr>
+        <tr><td>Tecnologias de Informação e Comunicação</td><td>100 horas</td></tr>
+        <tr><td>Educação Física</td><td>140 horas</td></tr>
+        <tr><td>Geografia</td><td>200 horas</td></tr>
+        <tr><td>História e Cultura das Artes</td><td>200 horas</td></tr>
+        <tr><td>Matemática</td><td>100 horas</td></tr>
+        <tr><td>Comunicar em Francês</td><td>180 horas</td></tr>
+        <tr><td>Turismo - Informação e Animação Turística</td><td>402 horas</td></tr>
+        <tr><td>Técnicas de Comunicação em Acolhimento Turístico</td><td>240 horas</td></tr>
+        <tr><td>Operações Técnicas em Empresas Turísticas</td><td>358 horas</td></tr>
+        <tr><td><strong>Formação em Contexto de Trabalho (FCT)</strong></td><td><strong>600 horas</strong></td></tr>
+        <tr><th>Total</th><th>3280 horas</th></tr>
+      </table>
+    </div>
+
+    <div class="box">
+      <h2>Certificação</h2>
+      <p>12.º Ano | Certificado profissional nível IV</p>
+    </div>
+
+    <div class="box">
+      <h2>Saídas Profissionais</h2>
+      <ul>
+        <li>Agências de viagens e operadores turísticos</li>
+        <li>Unidades hoteleiras</li>
+        <li>Empresas de animação turística</li>
+        <li>Postos e centros de informação turística</li>
+        <li>Serviços terra em aeroportos</li>
+        <li>Navios de cruzeiro</li>
+        <li>Organização de eventos e congressos</li>
+        <li>Turismo rural e ecológico</li>
+        <li>Administração pública (turismo)</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h2>Vantagens / Regalias</h2>
+      <ul>
+        <li>Bolsa de profissionalização</li>
+        <li>Bolsa de Mérito (ASE)</li>
+        <li>Subsídio de alimentação</li>
+        <li>Seguro escolar e manuais escolares</li>
+        <li>Farda completa</li>
+        <li>Computador portátil</li>
+        <li>Certificado profissional nível IV</li>
+        <li>Equivalência ao 12.º Ano</li>
+        <li>Acesso ao Ensino Superior (vagas específicas)</li>
+        <li>Visitas de estudo</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h2>Requisitos de Acesso</h2>
+      <p>9.º Ano de escolaridade</p>
+    </div>
+    <script>
+        function toggleMenu() {
+          document.getElementById('side-menu').classList.toggle('show');
+        }
+        function closeMenu() {
+          document.getElementById('side-menu').classList.remove('show');
+        }
+      </script>
+
+    <footer>
+      <p>&copy; 2025 Agrupamento de Escolas Abel Salazar</p>
+    </footer>
+  </main>
+</body>
+</html>

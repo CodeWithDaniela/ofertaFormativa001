@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso Profissional Técnico de Multimédia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: beige;
+    }
+
+    .menu-toggle {
+      display: block;
+      background-color: rgb(66, 42, 74);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 1001;
+    }
+
+    nav {
+      width: 220px;
+      background-color: rgb(66, 42, 74);
+      color: white;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      padding-top: 50px;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+      z-index: 1000;
+    }
+
+    nav.show {
+      transform: translateX(0);
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 20px 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: block;
+    }
+
+    nav ul li a:hover {
+      background-color: rgb(99, 66, 112);
+    }
+
+    .main-content {
+      padding: 20px;
+      margin-left: 0;
+      max-width: 1000px;
+    }
+
+    h1 {
+      font-family: Tuffy, sans-serif;
+      color: rgb(66, 42, 74);
+    }
+
+    .box {
+      border: 1px solid rgb(66, 42, 74);
+      padding: 16px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      background-color: rgb(233, 233, 202);
+    }
+
+    .box h2 {
+      margin-top: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid rgb(66, 42, 74);
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: rgb(66, 42, 74);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+
+  <nav id="side-menu">
+    <ul>
+      <li><a href="index.html" onclick="closeMenu()">Página inicial</a></li>
+      <li><a href="cientifico.html" onclick="closeMenu()">Científico-Humanísticos</a></li>
+      <li><a href="profissionaisturismo.html" onclick="closeMenu()">Profissional Turismo</a></li>
+      <li><a href="info.html" onclick="closeMenu()">Informações</a></li>
+    </ul>
+  </nav>
+
+  <div class="main-content">
+    <h1>Curso Profissional Técnico de Multimédia</h1>
+
+    <div class="box">
+      <p>O Curso Profissional Técnico de Multimédia da Escola Secundária Abel Salazar é um curso destinado aos jovens que gostam de tecnologia e desejam seguir uma carreira desafiante e variada.</p>
+      <p>O curso prepara os alunos para uma série de áreas, que vão desde o design à fotografia, passando pela edição web, vídeo e som, animação 2D/3D, jogos e muito mais.</p>
+      <p>Nas disciplinas da formação técnica, os alunos têm a oportunidade de vivenciar, de forma real, o contexto profissional da área de multimédia.</p>
+      <p>Os alunos são convidados a realizar propostas de trabalho ligadas ao desenho e produção digital de conteúdos multimédia, a desempenhar tarefas de carácter técnico e artístico, com vista à criação de soluções interativas de comunicação.</p>
+      <p>O vídeo abaixo é constituído por produções digitais de conteúdos multimédia, realizadas pelos alunos em contexto de sala de aula, na Formação em Contexto de Trabalho (FCT) e na Prova de Aptidão Profissional (PAP).</p>
+      <p><a href="https://youtu.be/PmabK4dPwRU" target="_blank">Ver vídeo</a></p>
+    </div>
+
+    <div class="box">
+      <h2>Plano Curricular</h2>
+      <table>
+        <tr><th>Disciplinas</th><th>Total (3 anos)</th></tr>
+        <tr><td>Português</td><td>320 horas</td></tr>
+        <tr><td>Inglês</td><td>200 horas</td></tr>
+        <tr><td>Área de Integração</td><td>220 horas</td></tr>
+        <tr><td>Educação Física</td><td>140 horas</td></tr>
+        <tr><td>Tecnologias da Informação e Comunicação</td><td>100 horas</td></tr>
+        <tr><td>História da Cultura e das Artes</td><td>200 horas</td></tr>
+        <tr><td>Matemática</td><td>200 horas</td></tr>
+        <tr><td>Física</td><td>100 horas</td></tr>
+        <tr><td>Sistemas de Informação</td><td>350 horas</td></tr>
+        <tr><td>Design de Comunicação e Audiovisual</td><td>400 horas</td></tr>
+        <tr><td>Técnicas de Multimédia</td><td>400 horas</td></tr>
+        <tr><td><strong>FCT</strong></td><td><strong>600 horas</strong></td></tr>
+        <tr><th>Total do Plano Curricular</th><th>3230 horas</th></tr>
+      </table>
+    </div>
+
+    <div class="box">
+      <h2>Certificação</h2>
+      <p>12º Ano<br>Certificado profissional de nível IV</p>
+    </div>
+
+    <div class="box">
+      <h2>Saídas Profissionais e Ensino Superior</h2>
+      <p>Design Gráfico, Fotografia, Cinema, Web Design, Animação 2D, Modelação e Animação 3D, Game Development, Gestão de Redes Sociais, Produção / Gestão de Produtos Multimédia, Programação de Aplicações Multimédia, Técnico de Audiovisuais, Técnico de Animação Multimédia.</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('side-menu').classList.toggle('show');
+    }
+    function closeMenu() {
+      document.getElementById('side-menu').classList.remove('show');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@600&family=Londrina+Sketch&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&family=WindSong:wght@400;500&display=swap');
+body{
+    background-color: azure; 
+}
+h1{
+    font-family: tuffy;
+}
+p{
+    font-size: small;
+}
+
+  
